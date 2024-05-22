@@ -1,0 +1,154 @@
+/*----------共通部分----------*/
+html{
+    font-size: 100%;
+}
+body{
+    color: #fff;
+    font-family: "Zen Kurenaido", sans-serif;
+    font-weight: 600;
+}
+.title{
+    font-family: "Rock Salt", cursive;
+    font-size: 64px;
+}
+.fadein{
+    opacity: 0;
+}
+
+/*----------HERO----------*/
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/hero.png) center / cover;
+}
+.hero h3{   
+    padding-top: 15.5%;
+    padding-bottom: 2rem;
+    margin-left: 5%;
+}
+
+.hero h1{
+    font-family: "Bellota", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 96px;
+    color: #fff;
+    display: inline-block;
+    background-image: linear-gradient(90deg, #3E2005, #3E2005 50%, #ffffff00 50%, #ffffff00);
+    background-size: 200% 100%;
+    padding: .5rem 1rem;
+    margin-left: 30px;
+}
+
+/*----------MENU----------*/
+.menu{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/menu-back.png) center / cover;
+}
+.menu-title{
+    font-family: "Rock Salt", cursive;
+    font-size: 48px;
+}
+
+/*----------GALLERY----------*/
+.gallery-image{
+    display: inline-block;
+    width: 30%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.gallery-image::after{
+    content: '';
+    width: calc(100% - 2rem);
+    height: calc(100% - 2.5rem);
+    z-index: 3;
+    border: 3px solid var(--white);
+    top: 1rem;
+    left: 1rem;
+    position: absolute;
+}
+.gallery-image img {
+    object-fit: cover;
+    width: 100%;
+}
+.gallery-content{
+    float: right;
+    padding-right: 7%;
+    text-align: center;
+}
+.gallery-thumbnails {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    margin-top: 1rem;
+}
+.gallery-thumbnails img{
+    width: 80%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.menu-button{
+    display:inline-block;
+    font-size: 1.5rem;
+    background: #E7DCCB;
+    color: #643408;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 9px 16px;
+    margin-top: 10px;
+}
+
+/*----------NEWS----------*/
+.news{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/news.png) center / cover;
+}
+.news-text{
+    padding-top: 60px;
+    padding-left: 180px;
+}
+.news p{
+    font-size: 20px;
+    width:16rem;
+    margin-top: 30px;
+    text-align: center;
+}
+.news-button{
+    display:inline-block;
+    font-size: 1.5rem;
+    background: #E7DCCB;
+    color: #643408;
+    border-radius: 5px;
+    margin-top: 100px;
+    padding: 18px 32px;
+    text-decoration: none;
+}
+
+/*----------CONTACT----------*/
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    background: url(images/contact.png) center / cover;
+}
+.contact-text{
+    display: inline-block;
+    background: rgba(39, 11, 5, .75);
+    width: 40%;
+    text-align: center;
+    margin-top: 12%;
+    margin-left: 30%;
+}
+.contact-button{
+    display:inline-block;
+    font-size: 1.5rem;
+    background: #E7DCCB;
+    color: #643408;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 18px 32px;
+    text-decoration: none;
+}
+
